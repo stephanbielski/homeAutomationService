@@ -33,13 +33,6 @@ public class ErrorService {
                 .instance(URI.create("urn:ERROR:" + errorId)).detail(detail).invalidParams(invalidParams).build();
     }
 
-    /**
-     * Removes the Java package information from the error response body (fields {@code title} and {@code description}).
-     *
-     * @param errorMessage the plain exception localized message
-     *
-     * @return the 'cleaned' {@link String}
-     */
     public static String removePackageInformation(final String errorMessage) {
         return RegExUtils.removeAll(errorMessage, "(de|com|org|io|net|\\@?javax?)(\\.\\p{IsLower}{2,20}){1,10}\\.");
     }
