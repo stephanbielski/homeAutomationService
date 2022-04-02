@@ -8,17 +8,8 @@ import javax.validation.Valid;
 import nrw.bielski.model.Error;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import lombok.extern.log4j.Log4j2;
 
-/**
- * Out-sourcing error handling logic for common use.
- *
- * @author Dirk Weissmann
- * @since 2021-10-25
- * @version 1.0
- *
- */
 @Service
 @Log4j2
 public class ErrorService {
