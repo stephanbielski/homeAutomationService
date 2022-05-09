@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>nrw.bielski</groupId>
-    <artifactId>personenService</artifactId>
+    <artifactId>homeAutomationService</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>personenService</name>
+    <name>homeAutomationService</name>
 
     <developers>
         <developer>

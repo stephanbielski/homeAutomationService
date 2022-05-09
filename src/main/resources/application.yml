@@ -5,5 +5,21 @@ spring:
     default-property-inclusion: NON_NULL
     mapper:
       accept-case-insensitive-enums: true
-
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: 'false'
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      enabled: 'true'
+      max-request-size: 10MB
+  datasource:
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: secret
+    url: jdbc:mysql://localhost:3306/homeautomation?useSSL=false
 
